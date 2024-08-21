@@ -28,3 +28,4 @@ podSecurityContext:
 
 service:
   port: 1433
+  type: LoadBalancer
