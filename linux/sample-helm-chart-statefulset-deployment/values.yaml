@@ -23,8 +23,8 @@ containers:
 
 podAnnotations: {}
 
-podSecurityContext:
-   fsGroup: 10001
+# podSecurityContext:
+#    fsGroup: 10001
 
 service:
   port: 1433
