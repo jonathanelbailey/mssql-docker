@@ -29,3 +29,5 @@ podSecurityContext:
 service:
   port: 1433
   type: LoadBalancer
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: sqlserver.internal.magiccityit.com
