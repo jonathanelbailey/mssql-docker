@@ -5,7 +5,6 @@ metadata:
   labels:
     {{- include "sql-statefull-deploy.labels" . | nindent 4 }}
 spec:
-  clusterIP: None
   type: {{ .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
