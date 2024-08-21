@@ -4,6 +4,12 @@ metadata:
   name: {{ include "mssql-latest.fullname" . }}
   labels:
     {{- include "mssql-latest.labels" . | nindent 4 }}
+  {{- if .Values.service.annotations }}
+  {{- with .Values.service.annotations }}
+  annotations:
+  {{ toYaml . | trim | nindent 4 }}
+  {{- end }}
+  {{- end }}
 spec:
   type: {{ .Values.service.type }}
   ports:
