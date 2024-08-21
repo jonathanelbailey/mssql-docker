@@ -34,7 +34,7 @@ service:
     external-dns.alpha.kubernetes.io/hostname: sqlserver.internal.magiccityit.com
   
 pvc:
- StorageClass: "azure-disk"
+ StorageClass: "microk8s-hostpath"
  userdbaccessMode: ReadWriteOnce
  userdbsize: 5Gi
  userlogaccessMode: ReadWriteOnce
